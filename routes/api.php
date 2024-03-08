@@ -109,3 +109,12 @@ Route::get('calcular/vendas/comissao', function(Request $request){
     $comissao = $vendas * 5 / 100;
     return $comissao;
 });
+
+Route::get('calcular/dias/horas/minutos/segundos', function(Request $request){
+    $dias = $request->input('dias');
+    $horas = $dias * 24;
+    $minutos = $dias *  1440;
+    $segundos = $dias *  86400;
+    $resultado = $horas . $minutos . $segundos;
+    return $resultado;
+});
