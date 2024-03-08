@@ -49,3 +49,13 @@ Route::get('receber/primeiroNumero/segundoNumero', function(Request $request){
     $resultado =  $segundoNumero . $primeiroNumero;
     return $resultado; 
 });
+
+Route::get('receber/primeiroNumero/segundoNumero/terceiroNumero/quartoNumero/quintoNumero', function(Request $request){
+    $primeiroNumero = $request->input('$primeiroNumero'); 
+    $segundoNumero = $request->input('$segundoNumero'); 
+    $terceiroNumero = $request->input('$terceiroNumero');
+    $quartoNumero = $request->input('$quartoNumero');
+    $quintoNumero = $request->input('$quintoNumero');
+    $resultado =  $primeiroNumero + $segundoNumero; + $terceiroNumero +  $quartoNumero +  $quintoNumero / 5;
+    return $resultado; 
+});
