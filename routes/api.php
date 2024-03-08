@@ -88,3 +88,11 @@ Route::get('calcular/valor/desconto/valorDodesconto/valorComdesconto', function(
     $resultado = $valorComdesconto;
     return $resultado;
 });
+
+Route::get('calcular/salario/salarioAumento/aumento', function(Request $request){
+    $salario = $request->input('salario');
+    $aumento = $request->input('aumento');
+    $salarioAumento = $salario + $aumento;
+    $resultado = $salarioAumento;
+    return $resultado;
+});
