@@ -20,3 +20,10 @@ Route::get('receber/nome/nascimento/cidadeNatal', function(Request $request){
     $cidadeNatal = $request->input('$cidadeNatal');
     return $nome . $nascimento . $cidadeNatal;
 });
+
+Route::get('receber/primeiroNumero/segundoNumero', function(Request $request){
+    $primeiroNumero = $request->input('$primeiroNumero');
+    $segundoNumero = $request->input('$segundoNumero');
+    $resultado = $primeiroNumero . $segundoNumero;
+    return $resultado;
+});
