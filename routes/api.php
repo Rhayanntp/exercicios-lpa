@@ -118,3 +118,10 @@ Route::get('calcular/dias/horas/minutos/segundos', function(Request $request){
     $resultado = $horas . $minutos . $segundos;
     return $resultado;
 });
+
+Route::get('receber/preço/quantidade/calcular/valor', function(Request $request){
+    $preço = $request->input('preço');
+    $quantidade = $request->input('quantidade');
+    $valor = $preço * $quantidade;
+    return $valor;
+});
