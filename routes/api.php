@@ -72,3 +72,10 @@ Route::get('receber/primeiroNumero', function(Request $request){
     $resultado = $primeiroNumero * 2;
     return 'O dobro do '. $primeiroNumero . 'é igual a' . $resultado;
 });
+
+Route::get('calcular/base/altura', function(Request $request){
+    $base = $request->input('base');
+    $altura = $request->input('altura');
+    $resultado = $base * $altura;
+    return $resultado;
+});
