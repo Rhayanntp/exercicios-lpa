@@ -66,3 +66,9 @@ Route::get('receber/primeiroNumero/segundoNumero', function(Request $request){
     $resultado =  $segundoNumero / $primeiroNumero;
     return $resultado; 
 });
+
+Route::get('receber/primeiroNumero', function(Request $request){
+    $primeiroNumero = $request->input('$primeiroNumero');
+    $resultado = $primeiroNumero * 2;
+    return 'O dobro do '. $primeiroNumero . 'é igual a' . $resultado;
+});
