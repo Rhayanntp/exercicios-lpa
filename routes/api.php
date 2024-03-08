@@ -13,3 +13,10 @@ Route::get('receber/nome/idade', function(Request $request){
     $idade = $request->input('$idade');
     return $nome . $idade;
 });
+
+Route::get('receber/nome/nascimento/cidadeNatal', function(Request $request){
+    $nome = $request->input('$nome');
+    $nascimento = $request->input('$nascimento');
+    $cidadeNatal = $request->input('$cidadeNatal');
+    return $nome . $nascimento . $cidadeNatal;
+});
