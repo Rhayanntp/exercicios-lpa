@@ -103,3 +103,9 @@ Route::get('receber/valor/calcular/pontos', function(Request $request){
     return $pontos;
 
 });
+
+Route::get('calcular/vendas/comissao', function(Request $request){
+    $vendas = $request->input('vendas');
+    $comissao = $vendas * 5 / 100;
+    return $comissao;
+});
