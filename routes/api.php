@@ -79,3 +79,12 @@ Route::get('calcular/base/altura', function(Request $request){
     $resultado = $base * $altura;
     return $resultado;
 });
+
+Route::get('calcular/valor/desconto/valorDodesconto/valorComdesconto', function(Request $request){
+    $valor = $request->input('valor');
+    $desconto = $request->input('desconto');
+    $valorDodesconto = $valor / 100 * $desconto;
+    $valorComdesconto = $valor - $valorDodesconto;
+    $resultado = $valorComdesconto;
+    return $resultado;
+});
