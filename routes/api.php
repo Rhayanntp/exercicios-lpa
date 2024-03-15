@@ -124,3 +124,16 @@ Route::get('receber/preço/quantidade/calcular/valor', function(Request $request
     $valor = $preço * $quantidade;
     return $valor;
 });
+
+Route::get('exemplo/condicao', function (Request $request) {
+    $idade = $request->input('idade');
+    $retorno = "";
+    if($idade >= 18){
+        $retorno = "Maior de idade";
+    }
+    else{
+        $retorno = "Menor de idade";
+    }
+    return $retorno;
+    
+});
