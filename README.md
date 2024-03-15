@@ -7,60 +7,47 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+Exercícios API com PHP
+Este projeto contém uma série de exercício práticos para trabalhar com API
+e retorno dos dados no formato JSON utilizando a linguagem PHP e o
+framework Laravel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Requisitos
+certifique-se de ter os seguintes requisitos atendidosantes de começar a trabalhar
+nos exercícios:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+PHP instalado / Xampp instalado
+Composer instalado
+7-Zip instalado
+Git instalado
+Insonia instalado
+Visual Studio Code instalado
+Como utilizar este repositório
+Clone este repositório para seu ambiente de desenvolvimento local utilizando o comando:
+git clone https://github.com/Rhayanntp/exercicios-lpa.git
+Acesse o diretório do projeto:
+cd exercicios-lpa
+Iniciando o projeto
+composer update
+Instalando o servidor
+php artisan serve --port=80
+Acessar o Virtual Studio Code
+code .
+Inportar o arquivo do Insonia
+Licença
+Este projeto está licenciado sob a [MIT License] (LICENSE),
+o que significa que você pode utilizá-lo livremente para fins educacionais,
+comerciais ou pessoais.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Contato
+Em caso de dúvidas, sugestões ou problemas, sinta-se à vontade para entrar
+em contato através do email: rhayanrhangel58@gmail.com
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Aviso: Certifique-se de substituir “Rhayanntp” no link de clonagem e
+"rhayanrhangel58@gmail.com" na seção de contato pelos valores correspondentes do
+seu próprio usuário do GitHub e endereço de email.
+Este é apenas um modelo básico de README.md, você pode adaptar e melhorar
+conforme suas necessidades específicas de projeto. Certifique-se de incluir
+informações importantes sobre como configurar, executar e testar os exercícios, bem
+como qualquer outra documentação relevante para tomar o repositório mais
+amigável e útil para outros desenvolvedores.
