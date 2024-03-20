@@ -137,3 +137,77 @@ Route::get('exemplo/condicao', function (Request $request) {
     return $retorno;
     
 });
+ 
+Route::get('verifica/idade', function(Request $request){
+    $idade = $request->input("idade");
+    if($idade >= 18){
+        return "maior de idade";
+    } else {
+        return "menor de idade";
+    }
+
+});
+
+Route::get('verificar/par', function(Request $request){
+    $numero = $request->input('numero');
+    if($numero % 2 == 0){
+        return 'par';
+    } else {
+        return 'impar';
+    }
+
+}); 
+
+Route::get('verifica/numero', function(Request $request){
+    $numero = $request->input("numero");
+    if($numero > 10){
+        return "maior que 10";
+    } else {
+        return "menor que 10";
+    } 
+
+});
+
+Route::get('verifica/temperatura', function(Request $request){
+    $temperatura = $request->input("temperatura");
+    if($temperatura > 30){
+        return "Eatá quente";
+    } else {
+        return "Está frio";
+    } 
+
+});
+
+Route::get('verifica/numeração', function(Request $request){
+    $numero = $request->input("numero");
+    if($numero > 0){
+        return "positivo";
+    } else if($numero < 0){
+        return "negativo";
+    } else {
+        return "numero igual a zero";
+    }
+
+});
+
+Route::get('verifica/numeroMaior', function(Request $request){
+    $numero1 = $request->input("numero1");
+    $numero2 = $request->input("numero2");
+    
+    if($numero1 > $numero2){
+        return "Numero maior é numero1";
+    } else {
+        return "Numero maior é numero2";
+    }
+
+});
+
+Route::get('verifica/divisão', function(Request $request){
+    $numero = $request->input("numero");
+    if($numero %3 == 0){
+    return "divisivel";
+    } else {
+        return "não é divisivel";
+    }
+
+});
