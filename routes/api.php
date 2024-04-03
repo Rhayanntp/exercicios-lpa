@@ -381,3 +381,28 @@ Route::get('exercício/14', function(Request $request){
     } 
 
 });
+
+Route::get('exercício/17', function(Request $request){
+    $numero1 = $request->input('numero1');
+    $numero2 = $request->input('numero2');
+    if($numero1 == 0) {
+        return "não é possível efetuar a divisão pois o primeiro número é zero";
+    } else if ($numero2 == 0) {
+        return "não é possível efetuar a divisão pois o segundo número é zero";
+    } else {
+        return $numero1 / $numero2;
+    }
+    
+
+});
+
+Route::get('exercício/19', function(Request $request){
+    $numero1 = $request->input('numero1');
+    $numero2 = $request->input('numero2');
+    $resultado = $numero1 + $numero2;
+    if($resultado % 2 == 0) {
+        return "a soma dos dois numeros é par";
+    } else {
+        return $numero1 / $numero2;
+    }
+});
